@@ -5,9 +5,9 @@
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
   <meta name="keywords" content="python web application" />
   <meta name="description" content="pyramid web application" />
-  <link rel="shortcut icon" href="${request.static_url('hellopyramid:static/favicon.ico')}" />
-  <link rel="stylesheet" href="${request.static_url('hellopyramid:static/pylons.css')}" type="text/css" media="screen" charset="utf-8" />
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton|Nobile:regular,i,b,bi&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
+  <link rel="shortcut icon" href="${request.static_url('hellopyramid:static/favicon.ico', _scheme='https')}" />
+  <link rel="stylesheet" href="${request.static_url('hellopyramid:static/pylons.css', _scheme='https')}" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neuton|Nobile:regular,i,b,bi&amp;subset=latin" type="text/css" media="screen" charset="utf-8" />
   <!--[if lte IE 6]>
   <link rel="stylesheet" href="${request.static_url('hellopyramid:static/ie6.css')}" type="text/css" media="screen" charset="utf-8" />
   <![endif]-->
@@ -16,7 +16,7 @@
   <div id="wrap">
     <div id="top">
       <div class="top align-center">
-        <div><img src="${request.static_url('hellopyramid:static/pyramid.png')}" width="750" height="169" alt="pyramid"/></div>
+        <div><img src="${request.static_url('hellopyramid:static/pyramid.png', _scheme='https')}" width="750" height="169" alt="pyramid"/></div>
       </div>
     </div>
     <div id="middle">
