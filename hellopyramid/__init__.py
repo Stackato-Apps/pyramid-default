@@ -5,6 +5,7 @@ def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
     config = Configurator(root_factory=Root, settings=settings)
+    config.include('pyramid_chameleon')
     config.add_view('hellopyramid.views.my_view',
                     context='hellopyramid:resources.Root',
                     renderer='hellopyramid:templates/mytemplate.pt')
