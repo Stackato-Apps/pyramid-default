@@ -5,6 +5,6 @@
     pypm install -r requirements.txt
     paster serve development.init
 
-## Deploying to Stackato
+## Deploying to HPE Helion Stackato
 
-    stackato push pyramid-default
+    stackato push -n
