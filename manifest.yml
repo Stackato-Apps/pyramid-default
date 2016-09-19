@@ -1,3 +1,5 @@
 applications:
 - name: pyramid-default
+  buildpack: https://github.com/cloudfoundry/python-buildpack
   memory: 32M
+  stack: cflinuxfs2
